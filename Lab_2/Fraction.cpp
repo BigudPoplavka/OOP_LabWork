@@ -75,22 +75,18 @@ void Fraction::printAsFraction(double& decimal_fraction)
 	Fraction res((temp * k), k);
 }
 
-void Fraction::printAsFraction(char* decimal_fraction)
-{
-	//TODO 
-}
-
 int Fraction::gcd(int n, int m)
 {
-	int res = 1;
-	while (m != 0)
+int res = 1;
+    for (int i = n; i > 0; i--) {
+        if (n % i == 0 && m % i == 0)
 	{
-		res = m;
-		m = n % m;
-		n = res;
-	}
-
-	return res;
+            std::cout << "nod = " << i;
+		res = i;
+            break;
+        }
+    }
+return res;
 }
 
 //<= To Be Continued
