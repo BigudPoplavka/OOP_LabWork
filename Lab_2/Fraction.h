@@ -37,7 +37,5 @@ public:
 
 	//voids
 	static void printAsFraction(double& decimal_fraction);
-	static void printAsFraction(char* decimal_fraction);
 	static int gcd(int n, int m);
-
 };
