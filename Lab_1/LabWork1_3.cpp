@@ -2,6 +2,10 @@
 #include <iostream>
 #include <stdio.h>
 
+// EXE 3
+/*
+strcat - функция, приписывающая одну строку ко второй
+*/
 
 char* strcat(char* dest, const char* src)
 {
