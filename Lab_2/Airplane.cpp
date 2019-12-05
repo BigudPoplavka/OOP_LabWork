@@ -44,7 +44,7 @@ Airplane::~Airplane(){}
 	{
 		for (int i = 0; i < 3; i++) {
 
-			printf("\nImitation №%d\n", i + 1);
+			printf("\nImitation В№%d\n", i + 1);
 			this->RandomFlight();
 			this->FlightInfo();
 		}
@@ -77,19 +77,19 @@ Airplane::~Airplane(){}
 	//outInfo
 	void Airplane::FlightInfo() {
 		printf("------------------------------------------");
-		printf("- Пассажиров: %d\n", NumberOfUsers_);
-		printf("- Физическое количество: %d\n", local_users_);
-		printf("- Процент: %d%%\n", percentage_);
+		printf("- Max users: %d\n", NumberOfUsers_);
+		printf("- Local users: %d\n", local_users_);
+		printf("- Percentage: %d%%\n", percentage_);
 		printf("------------------------------------------");
 	}
 
 	void Airplane::AirInfo() {
 		printf("\n");
 		printf("------------------------------------------");
-		printf("- Модель: %s\n", model_);
-		printf("- Авиалинии: %s\n", airCompany_);
-		printf("- Год выпуска: %d\n", YearOfIssue_);
-		printf("- Число пассажиров: %d\n", NumberOfUsers_);
+		printf("- Model: %s\n", model_);
+		printf("- Company: %s\n", airCompany_);
+		printf("- Year of issue: %d\n", YearOfIssue_);
+		printf("- Max users: %d\n", NumberOfUsers_);
 		printf("------------------------------------------");
 	}
 
@@ -124,7 +124,6 @@ Airplane::~Airplane(){}
 	}
 
 	void Airplane::serialize() {
-		//	system("cls");
 
 		std::ofstream out("example.txt");
 
