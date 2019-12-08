@@ -44,7 +44,7 @@ Airplane::~Airplane(){}
 	{
 		for (int i = 0; i < 3; i++) {
 
-			printf("\nImitation ¹%d\n", i + 1);
+			printf("\nImitation %d\n", i + 1);
 			this->RandomFlight();
 			this->FlightInfo();
 		}
