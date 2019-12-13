@@ -47,7 +47,7 @@ int main()
 //MILITARY AIRPLANES
 	printf("\n\n\nLoading equipment on military airplanes...\n");
 
-	MilitaryPlane stels_1;
+	MilitaryPlane stels_1;		//setters... why not?
 	stels_1.setBombsMax(20);
 	stels_1.setNumber(356);
 	stels_1.Load(18);
