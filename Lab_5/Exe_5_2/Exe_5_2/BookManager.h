@@ -12,9 +12,9 @@ private:
 public:
 	bool operator()(Book* book_1, Book* book_2)
 	{
-		if (book_1->getAuthor() < book_2->getAuthor())	//первичный ключ
+		if (book_1->getAuthor() < book_2->getAuthor())	//РїРµСЂРІРёС‡РЅС‹Р№ РєР»СЋС‡
 			return true;
-		else if (book_1->getAuthor() == book_2->getAuthor())	//вторичный ключ
+		else if (book_1->getAuthor() == book_2->getAuthor())	//РІС‚РѕСЂРёС‡РЅС‹Р№ РєР»СЋС‡
 			return book_1->getTitle() < book_2->getTitle();
 		else return false;
 	}
@@ -33,7 +33,7 @@ public:
 		last_ = last;
 	}
 
-	bool operator()(Book* book_1)	//поиск книг в диапазоне от года a до года b 
+	bool operator()(Book* book_1)	 
 	{
 		int tmp = book_1->getYear();
 		return tmp >= first_ && tmp <= last_;
