@@ -16,7 +16,6 @@ int word_count = 0;
 
 char delimiters[] = { ' ', '.', ',', '-', ':', ';', '!' };
 
-//метод, принимающий нарк... строку и возвращающий разбиение строки
 vector<string> SplitString(string& str, char* delimiter, int size)
 {
 	vector<string> res_;
@@ -26,7 +25,7 @@ vector<string> SplitString(string& str, char* delimiter, int size)
 
 	for (int symb = 0; symb < str.size(); symb++)
 	{
-		for (int i = 0; i < size; i++)	//проверяем разделители
+		for (int i = 0; i < size; i++)	//РїСЂРѕРІРµСЂСЏРµРј СЂР°Р·РґРµР»РёС‚РµР»Рё
 			if (str[symb] == delimiter[i])
 			{
 				tmp = "";
@@ -37,7 +36,7 @@ vector<string> SplitString(string& str, char* delimiter, int size)
 				break;
 			}
 
-		if (symb == str.size() - 1)  //последний символ
+		if (symb == str.size() - 1)  //РїРѕСЃР»РµРґРЅРёР№ СЃРёРјРІРѕР»
 		{
 			tmp = "";
 			tmp = str.substr(offset, symb - offset + 1);
@@ -47,7 +46,7 @@ vector<string> SplitString(string& str, char* delimiter, int size)
 	return res_;
 }
 
-//инициализация словаря
+//РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ 
 void MapInitialize(map<string, int> map, char* delimiters)
 {
 	ifstream fs;
@@ -61,7 +60,7 @@ void MapInitialize(map<string, int> map, char* delimiters)
 		for (int i = 0; i < res.size(); i++)
 		{
 			cout << res[i] << endl;
-			if (res[i].size() != 0) map[res[i]]++;	  //генерируем ключи по порядку
+			if (res[i].size() != 0) map[res[i]]++;	  //РЅР°СЂР°С‰РёРІР°РµРј РєР»СЋС‡Рё
 		}
 	}
 	fs.close();
