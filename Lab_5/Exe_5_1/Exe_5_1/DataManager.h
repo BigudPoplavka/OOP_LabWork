@@ -32,7 +32,6 @@ public:
 	void LoadFromFile();
 	void PrintData();
 
-	//явная специализиция
 	char pushChar(char elem);
 	char popUpper();
 	char popLower();
@@ -109,8 +108,7 @@ void DataManager<T>::SaveToFile()
 	saving.open(dumpFile_);
 
 	for (int i = 0; i < DATA_.size(); i++)
-	{
-		//принимаем символьную сслыку на элемент массива и размер типа
+	{		
 		saving.write(((char*)&DATA_[i]), sizeof(T));
 	}
 	DATA_.erase(DATA_.begin() + 1, DATA_.end());
@@ -135,7 +133,6 @@ void DataManager<T>::LoadFromFile()
 }
 
 
-//явная специализация шаблона для типа char
 template<>
 char DataManager<char>::pushChar(char elem)
 {
