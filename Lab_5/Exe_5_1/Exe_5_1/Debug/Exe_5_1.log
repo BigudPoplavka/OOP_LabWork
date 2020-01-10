@@ -1,0 +1,20 @@
+﻿  DataManager_Main.cpp
+c:\users\admin\source\repos\exe_5_1\exe_5_1\datamanager.h(142): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\admin\source\repos\exe_5_1\exe_5_1\datamanager.h(95): warning C4018: <: несоответствие типов со знаком и без знака
+  c:\users\admin\source\repos\exe_5_1\exe_5_1\datamanager.h(94): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\users\admin\source\repos\exe_5_1\exe_5_1\datamanager_main.cpp(36): note: выполняется компиляция ссылки на экземпляр шаблон функции "void DataManager<char>::push(T *,size_t)"
+          with
+          [
+              T=char
+          ]
+  c:\users\admin\source\repos\exe_5_1\exe_5_1\datamanager.h(140): note: выполняется компиляция ссылки на экземпляр шаблон класс "DataManager<char>"
+c:\users\admin\source\repos\exe_5_1\exe_5_1\datamanager.h(111): warning C4018: <: несоответствие типов со знаком и без знака
+  c:\users\admin\source\repos\exe_5_1\exe_5_1\datamanager.h(107): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\users\admin\source\repos\exe_5_1\exe_5_1\datamanager.h(102): note: выполняется компиляция ссылки на экземпляр шаблон функции "void DataManager<char>::SaveToFile(void)"
+  c:\users\admin\source\repos\exe_5_1\exe_5_1\datamanager.h(47): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\users\admin\source\repos\exe_5_1\exe_5_1\datamanager_main.cpp(10): note: выполняется компиляция ссылки на экземпляр шаблон функции "DataManager<char>::DataManager(void)"
+c:\users\admin\source\repos\exe_5_1\exe_5_1\datamanager.h(149): warning C4715: DataManager<char>::pushChar: значение возвращается не при всех путях выполнения
+c:\users\admin\source\repos\exe_5_1\exe_5_1\datamanager.h(82): warning C4715: DataManager<int>::pop: значение возвращается не при всех путях выполнения
+c:\users\admin\source\repos\exe_5_1\exe_5_1\datamanager.h(171): warning C4715: DataManager<char>::popUpper: значение возвращается не при всех путях выполнения
+c:\users\admin\source\repos\exe_5_1\exe_5_1\datamanager.h(194): warning C4715: DataManager<char>::popLower: значение возвращается не при всех путях выполнения
+  Exe_5_1.vcxproj -> C:\Users\Admin\source\repos\Exe_5_1\Debug\Exe_5_1.exe
