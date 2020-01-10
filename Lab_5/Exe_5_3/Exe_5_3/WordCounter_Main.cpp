@@ -17,7 +17,7 @@ int main()
 		map<string, int>::iterator MapMax = map_.begin();
 
 		for (MapIterator; MapIterator != map_.end(); MapIterator++)
-			if (MapIterator->first.size() > max_chars) //ключ (слово) > 3 букв
+			if (MapIterator->first.size() > max_chars) 
 				MapMax = MapIterator;
 
 		if (MapMax->first.size() > max_chars && MapMax->second >= max_words)
