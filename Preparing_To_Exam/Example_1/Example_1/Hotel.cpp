@@ -19,6 +19,7 @@ Hotel::~Hotel()
 void Hotel::show()
 {
 	for (int i = 0; i < rooms_count_; i++)
-			cout << "Room �" << ROOMS_[i]->getNum() 
+			cout << "Room №" << ROOMS_[i]->getNum() 
 			<< " (" << ROOMS_[i]->getPrice() << ")" << endl;
+	//or printf("Room № %d (%d$)", ROOMS_[i]->getNum(), ROOMS_[i]->getPrice());
 }
