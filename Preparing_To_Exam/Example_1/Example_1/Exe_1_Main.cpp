@@ -5,7 +5,7 @@ int main()
 {
 	setlocale(LC_ALL, "RUSSIAN");
 
-	Hotel hotel(5);
+	Hotel* hotel = new Hotel(5);
 	hotel.show();
 
 	system("pause");
